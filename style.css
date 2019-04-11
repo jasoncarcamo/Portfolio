@@ -192,6 +192,11 @@ footer{
         padding: 10%;
 
     }
+    
+    .myimage{
+        width: 27em;
+        height: 18em;
+    }
 
 
     #projectsbox{
