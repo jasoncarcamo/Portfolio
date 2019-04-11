@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+     
+}
+
+body{
+    
+    background-color: #edf0f5;
+
+   
+
+}
+
+.myimage{
+    width: 22em;
+    height: 14em;
+    border-radius: 3em;
+}
+
+h3{
+    font-size: 1.1em;
+}
+
+#projectsbox a{
+
+    margin: 0 .7em;
+    font-size: .7em;
+}
+
+a{
+    color: white;
+    
+}
+
+a:visited{
+    color: red;
+}
+
+main{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-gap: 3em 0;
+    
+  
+   
+}
+
+.headline{
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: white;
+}
+
+em{
+    font-weight: bold;
+}
+
+#headerbox{
+    margin-top: 2%;
+    width: 95%;
+
+}
+
+.headerlogo{
+    display: inline-block;
+    border: .16em solid #39569c;
+    color: #39569c;
+    border-radius: 100%;
+    text-align: center;
+    width: 2.3em;
+    height: 2.3em;
+    padding: 5.5% .5% 3% 0;
+    font-size: 3em;
+    z-index: 1;
+    background-color: #edf0f5;
+}
+
+section{
+    display: inline-block;
+    background-color: #39569c;
+    color: white;
+    padding: 8%;
+    border-radius: 3em;
+    margin: 0 auto;
+    font-size: 1.125em;
+    height: 190%;
+    
+    
+}
+
+.headertitle{
+    display: inline-block;
+    position: relative;
+    bottom: 4.2em;
+    padding: 2% 2% 2% 0;
+    background-color: #39569c;
+    color: white;
+    text-align: right;
+    font-size: 1.6em;
+    width: 96%;
+    z-index: -1;
+    letter-spacing: 0.1em;
+    margin-left: 10%;
+}
+
+/*Bio Section*/
+
+#biobox{
+    width: auto;
+    height: auto;
+    
+    
+}
+
+/*Skills Box*/
+
+#skillsbox{
+    line-height: 1.5em;
+    width: auto;
+    height: auto;
+}
+
+/*Projects Box*/
+
+#projectsbox{
+    width: auto;
+    height: auto;
+
+}
+
+.projectlinks{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Footer*/
+footer{
+    background-color: #39569c;
+    color: white;
+    font-size: 1.125em;
+    padding: 0 5%;
+    border-radius: 15em;
+    margin: 0% auto 0 auto;
+}
+
+.contactlinks {
+    
+    margin: 0 auto;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links  li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 4% 5.4% 4% 0;
+}
+
+@media screen and (min-width: 480px){
+
+    main{
+        display: grid;
+        height: 120%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto 5% auto;
+        grid-gap: 1.1em;
+      
+       
+    }
+
+    .headerlogo{
+        width: 2.3em;
+        height: 2.3em;
+        padding: .4em .1em 0 0;
+        font-size: 3.6em;
+    }
+
+    .headertitle{
+        font-size: 1.9em;
+        bottom: 4.6em;
+        height: 2.3em;
+        padding: .5em .1em 0 0;
+    }
+
+    section{
+        height: auto;
+        padding: 10%;
+
+    }
+
+
+    #projectsbox{
+        grid-column-start: auto;
+        grid-column-end: span 2;
+    }
+
+    .projectlinks{
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    footer{
+        margin: 5% auto 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 900px){
+    #projectsbox{
+        height: 100%;
+    }
+    
+}
